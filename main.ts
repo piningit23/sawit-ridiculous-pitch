@@ -6,6 +6,7 @@ import { join } from "node:path";
 
 const PITCH =
   "Rent-a-Mourner sends trained strangers to weep convincingly at funerals, because grieving families pay $400 a service for a room that feels loved.";
+// 146 chars: well inside the 200-char cap, one sentence, customers + price up front.
 
 const outDir = process.env.OUTPUT_DIR ?? "/output";
 if ([...PITCH].length > 200 || PITCH.trim().length === 0) {
